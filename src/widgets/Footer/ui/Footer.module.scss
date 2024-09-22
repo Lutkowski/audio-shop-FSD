@@ -1,6 +1,7 @@
 @import "../../../app/styles/variables";
 
 .Footer {
+  max-width: 100%;
   background-color: $secondary-background-color;
   display: flex;
   justify-content: space-between;
@@ -10,6 +11,14 @@
   margin-top: 20.35px;
   font-size: $font-size-m;
   line-height: $line-height-m;
+  @media (max-width: 768px) {
+    font-size: $font-size-s;
+  }
+  @media (max-width: 576px){
+    min-width: 300px;
+    padding: 5px;
+    font-size: 10px;
+  }
 }
 
 .Footer__Languages {
@@ -30,7 +39,10 @@
   margin: auto 0;
 }
 
-.Footer__Navbar{
+.Footer__Navbar {
   align-self: flex-start;
   padding: 0;
+  @media(max-width: 768px) {
+    flex-direction: column;
+  }
 }
