@@ -1,0 +1,36 @@
+@import "../../../app/styles/variables";
+
+.Footer {
+  background-color: $secondary-background-color;
+  display: flex;
+  justify-content: space-between;
+  height: 149px;
+  border-radius: 30px 30px 0 0;
+  padding: 29px;
+  margin-top: 20.35px;
+  font-size: $font-size-m;
+  line-height: $line-height-m;
+}
+
+.Footer__Languages {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+
+  ul {
+    margin-left: 17px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    align-items: center;
+  }
+}
+
+.Footer:nth-child(2) {
+  margin: auto 0;
+}
+
+.Footer__Navbar{
+  align-self: flex-start;
+  padding: 0;
+}

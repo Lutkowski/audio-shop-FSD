@@ -1,0 +1,25 @@
+.Header{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header__Icon{
+  margin:20px;
+}
+
+.Header__Counter {
+  position: absolute;
+  top: -8px;
+  right: 10px;
+  background-color: orange;
+  border-radius: 50%;
+  width: 17.4px;
+  height: 17.4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+}

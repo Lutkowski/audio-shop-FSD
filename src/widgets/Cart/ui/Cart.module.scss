@@ -1,0 +1,23 @@
+@import "../../../app/styles/variables";
+
+.Cart {
+  h2 {
+    color: rgb(28, 28, 39);
+    font-size: 20px;
+    font-weight: $text-weight-bold;
+    line-height: 24px;
+    margin-bottom: 13px;
+  }
+}
+
+.CartWrapper {
+  display: flex;
+  ul{
+    min-width: 57.54%;
+  }
+}
+
+.Cart__CartSidebar {
+  margin-left: auto;
+}
+

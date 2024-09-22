@@ -1,0 +1,68 @@
+@import "../../../app/styles/variables";
+
+.CartCard {
+  background: $secondary-background-color;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  display: flex;
+  padding: 18px 18px 15px 18px;
+  line-height: $line-height-m;
+  font-family: $font-family-main;
+  font-size: $font-size-m;
+  height: 218px;
+  margin-bottom: 13px;
+}
+
+.CartCard__Product {
+  img {
+    height: 136px;
+    width: 146px;
+  }
+
+  display: flex;
+  flex-direction: column;
+}
+
+.CartCard__Control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    margin: 19px 25px;
+    font-weight: $text-weight-bold;
+  }
+}
+
+.CartCard__Info {
+  margin: 76px auto 0 3.7%;
+
+  h3 {
+    color: rgb(28, 28, 39);
+    font-size: $font-size-m;
+    font-weight: 500;
+    line-height: $line-height-m;
+  }
+
+  p {
+    margin-top: 12px;
+    color: rgb(170, 170, 170);
+    font-size: 15px;
+    font-weight: $text-weight-bold;
+    line-height: 18px;
+  }
+}
+
+.CartCard__Control_Right {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    margin-top:auto;
+    color: rgb(28, 28, 39);
+    font-size: 15px;
+    font-weight: $text-weight-bold;
+    line-height: 18px;
+  }
+}
+
