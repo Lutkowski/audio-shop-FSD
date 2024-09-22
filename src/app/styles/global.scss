@@ -25,8 +25,15 @@ ul, ol {
   list-style: none;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+.hoverable {
+  :hover {
+    transition: fill 0.3s ease;
+    fill: $price-text-color;
+  }
 }

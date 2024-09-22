@@ -1,11 +1,11 @@
 import classes from './Logo.module.scss'
-import {Link} from "react-router-dom";
+import MyLink from "../MyLink/MyLink.tsx";
 
 const Logo = () => {
     return (
-        <Link to={'/'}>
+        <MyLink to={'/'}>
             <h1 className={classes.Logo}>QPICK</h1>
-        </Link>
+        </MyLink>
     );
 };
 

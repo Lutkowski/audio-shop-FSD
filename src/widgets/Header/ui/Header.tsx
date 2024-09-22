@@ -15,7 +15,7 @@ const Header = () => {
             <Logo/>
             <Navbar>
                 <Icon iconImage={<FavouriteIcon/>} className={classes.Header__Icon}></Icon>
-                <Icon iconImage={<CartIcon/>} className={classes.Header__Icon} to={'/cart'}>
+                <Icon iconImage={<CartIcon className='hoverable'/>} className={classes.Header__Icon} to={'/cart'}>
                     {cartItemsQuantities > 0 && (
                         <span className={classes.Header__Counter}>{cartItemsQuantities}</span>
                     )}

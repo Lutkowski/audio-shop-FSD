@@ -4,7 +4,7 @@ import Navbar from "../../../shared/ui/Navbar/Navbar.tsx";
 import Icon from "../../../shared/ui/Icon/Icon.tsx";
 import {LangIcon, TelegramIcon, VKIcon, WhatsappIcon} from "../../../shared/assets";
 import classes from "./Footer.module.scss"
-import {Link} from "react-router-dom";
+import MyLink from "../../../shared/ui/MyLink/MyLink.tsx";
 
 const Footer = () => {
     return (
@@ -13,9 +13,9 @@ const Footer = () => {
             <nav>
                 <ul>
                     <li>Избранное</li>
-                    <Link to={'/cart'}>
+                    <MyLink to={'/cart'}>
                         <li>Корзина</li>
-                    </Link>
+                    </MyLink>
                     <li>Контакты</li>
                 </ul>
             </nav>
@@ -30,9 +30,9 @@ const Footer = () => {
                 </div>
             </div>
             <Navbar className={classes.Footer__Navbar}>
-                <Icon to={'https://vk.com/'} iconImage={<VKIcon/>}></Icon>
-                <Icon to={'https://web.telegram.org/'} iconImage={<TelegramIcon/>}></Icon>
-                <Icon to={'https://web.whatsapp.com/'} iconImage={<WhatsappIcon/>}></Icon>
+                <Icon to={'https://vk.com/'} iconImage={<VKIcon className='hoverable'/>}></Icon>
+                <Icon to={'https://web.telegram.org/'} iconImage={<TelegramIcon className='hoverable'/>}></Icon>
+                <Icon to={'https://web.whatsapp.com/'} iconImage={<WhatsappIcon className='hoverable'/>}></Icon>
             </Navbar>
         </footer>
     );
