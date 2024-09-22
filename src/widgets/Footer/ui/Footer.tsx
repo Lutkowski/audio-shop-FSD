@@ -30,9 +30,9 @@ const Footer = () => {
                 </div>
             </div>
             <Navbar className={classes.Footer__Navbar}>
-                <Icon iconImage={<VKIcon/>}></Icon>
-                <Icon iconImage={<TelegramIcon/>}></Icon>
-                <Icon iconImage={<WhatsappIcon/>}></Icon>
+                <Icon to={'https://vk.com/'} iconImage={<VKIcon/>}></Icon>
+                <Icon to={'https://web.telegram.org/'} iconImage={<TelegramIcon/>}></Icon>
+                <Icon to={'https://web.whatsapp.com/'} iconImage={<WhatsappIcon/>}></Icon>
             </Navbar>
         </footer>
     );
