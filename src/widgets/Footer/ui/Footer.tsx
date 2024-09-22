@@ -4,6 +4,7 @@ import Navbar from "../../../shared/ui/Navbar/Navbar.tsx";
 import Icon from "../../../shared/ui/Icon/Icon.tsx";
 import {LangIcon, TelegramIcon, VKIcon, WhatsappIcon} from "../../../shared/assets";
 import classes from "./Footer.module.scss"
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -12,7 +13,9 @@ const Footer = () => {
             <nav>
                 <ul>
                     <li>Избранное</li>
-                    <li>Корзина</li>
+                    <Link to={'/cart'}>
+                        <li>Корзина</li>
+                    </Link>
                     <li>Контакты</li>
                 </ul>
             </nav>
